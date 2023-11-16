@@ -9,7 +9,7 @@ on:
       - main
       - production
   workflow_dispatch:
-  jobs:
+jobs:
     web-deploy:
       name: Wdrozenia na serwer
       runs-on: ubuntu-latest
@@ -23,3 +23,6 @@ on:
           server: 172.203.224.87
           username: ${{ secrets.ftp_username }}
           password: ${{ secrets.ftp_password }}
+          server-dir: app_1/
+
+      
