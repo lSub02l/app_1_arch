@@ -1,8 +1,8 @@
 from flask import Flask
-app =  Flask(__name__)
+app = Flask(__name__)
 
 @app.route("/")
-def Hello():
+def hello():
 	return "<h1>Pierwsza aplikacja w Pythonie(Flask) eeeee"
 
 if __name__ == "__main__":
